@@ -21,7 +21,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../assets/images/VV_NAZ_MA.jpeg');
+    background-image: url('/assets/images/VV_NAZ_MA.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -141,8 +141,8 @@ a.link-button {
     text-align: center;
 }
 
-a.link-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-}
+/*a.link-button:hover {*/
+/*    background-color: #0056b3; !* Darker blue on hover *!*/
+/*}*/
 
 
