@@ -1,9 +1,157 @@
+/*!* General Reset *!*/
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+/*!* Body Styling *!*/
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    line-height: 1.6;*/
+/*    color: #333;*/
+/*    height: 100vh;*/
+/*    overflow-y: auto; !* Allow vertical scrolling *!*/
+/*}*/
+
+/*!* Background Styling with Image *!*/
+/*body::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background-image: url('/assets/images/VV_NAZ_MA.jpeg');*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    !*background-repeat: no-repeat;*!*/
+/*    opacity: 0.7; !* Adjust transparency *!*/
+/*    background-color: #333; !* Fallback color (dark gray) *!*/
+/*    z-index: -1; !* Places the background behind the content *!*/
+/*}*/
+
+/*!* Header Styling *!*/
+/*header {*/
+/*    position: relative;*/
+/*    width: 100%;*/
+/*    max-width: 1288px;*/
+/*    height: auto;*/
+/*    margin: 0 auto;*/
+/*    background: #000;*/
+/*    border: 1px solid rgba(0, 0, 0, 0.1);*/
+/*    border-radius: 2px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    padding: 20px 0;*/
+/*    z-index: 2;*/
+/*}*/
+
+/*!* Title Styling *!*/
+/*header h1 {*/
+/*    width: 100%;*/
+/*    max-width: 1228px;*/
+/*    font-family: 'Inknut Antiqua', serif;*/
+/*    font-weight: 400;*/
+/*    font-size: 80px;*/
+/*    line-height: 100px;*/
+/*    text-align: center;*/
+/*    color: #FF1313;*/
+/*    margin-top: 20px;*/
+/*}*/
+
+/*!* Navigation Buttons *!*/
+/*.nav-buttons {*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    align-items: center;*/
+/*    width: 100%;*/
+/*    max-width: 1288px;*/
+/*    margin: 20px auto 10px;*/
+/*    padding: 0;*/
+/*    z-index: 3; !* Ensures buttons appear above the red bar *!*/
+/*}*/
+
+/*!* Navigation Button Styling *!*/
+/*.nav-buttons a {*/
+/*    width: 200px;*/
+/*    height: 50px;*/
+/*    background: linear-gradient(90deg, #D9D9D9 0%, #737373 100%);*/
+/*    border: 1px solid #000;*/
+/*    border-radius: 8px;*/
+/*    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    font-family: 'Keania One', sans-serif;*/
+/*    font-size: 30px;*/
+/*    color: #000;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.nav-buttons a:hover {*/
+/*    background: #FF1313;*/
+/*    color: #fff;*/
+/*}*/
+
+/*!* Red Bar *!*/
+/*.red-bar {*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    max-width: 1440px;*/
+/*    height: 104px;*/
+/*    bottom: 0;*/
+/*    background: #FF1313;*/
+/*    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+/*    z-index: 1; !* Ensures it stays behind the buttons *!*/
+/*    margin-top: 10px; !* Adds space if necessary *!*/
+/*}*/
+
+/*!* Paragraph Styling *!*/
+/*p {*/
+/*    text-align: center;*/
+/*    margin-top: 20px;*/
+/*    font-size: 1.2rem;*/
+/*    color: #DC143C;*/
+/*}*/
+
+/*!* Image Container *!*/
+/*.image-container {*/
+/*    text-align: center;*/
+/*    margin: 20px auto;*/
+/*}*/
+
+/*img {*/
+/*    width: 50%;*/
+/*    max-width: 600px;*/
+/*    height: auto;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*!* Links *!*/
+/*a.link-button {*/
+/*    color: #DC143C;*/
+/*    text-decoration: none;*/
+/*    display: inline-block;*/
+/*    padding: 10px 20px;*/
+/*    background-color: #696969; !* Button background *!*/
+/*    color: #fff; !* White text *!*/
+/*    border-radius: 5px;*/
+/*    font-size: 16px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*!*a.link-button:hover {*!*/
+/*!*    background-color: #0056b3; !* Darker blue on hover *!*!*/
+/*!*}*!*/
+
 /* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
@@ -24,7 +172,7 @@ body::before {
     background-image: url('/assets/images/VV_NAZ_MA.jpeg');
     background-size: cover;
     background-position: center;
-    background-repeat: repeat;
+    /*background-repeat: no-repeat;*/
     opacity: 0.7; /* Adjust transparency */
     background-color: #333; /* Fallback color (dark gray) */
     z-index: -1; /* Places the background behind the content */
@@ -141,8 +289,38 @@ a.link-button {
     text-align: center;
 }
 
-/*a.link-button:hover {*/
-/*    background-color: #0056b3; !* Darker blue on hover *!*/
-/*}*/
+/* Frame and Exclude Sections */
+.frame-container {
+    position: relative;
+    width: 1403px;
+    height: 681px;
+    margin: 20px auto;
+    background: #000000;
+    border: 1px solid #000000;
+}
 
+.exclude {
+    width: 1403px;
+    height: 681px;
+    background: #D9D9D9;
+}
+
+.page {
+    position: absolute;
+    width: 424px;
+    height: 610px;
+    background: #D9D9D9;
+}
+
+.page.page-1 {
+    left: 0;
+}
+
+.page.page-2 {
+    left: 490px;
+}
+
+.page.page-3 {
+    left: 980px;
+}
 
