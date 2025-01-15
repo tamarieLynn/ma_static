@@ -154,28 +154,11 @@ a.link-button {
     text-align: center;
 }
 
-/*!* Frame and Exclude Sections *!*/
-/*.frame-container {*/
-/*    position: relative;*/
-/*    width: 1403px;*/
-/*    height: 681px;*/
-/*    margin: 20px auto;*/
-/*    background: #000000;*/
-/*    border: 1px solid #000000;*/
-/*}*/
-
 .exclude {
     width: 1403px;
     height: 681px;
     background: #D9D9D9;
 }
-
-/*.page {*/
-/*    position: absolute;*/
-/*    width: 424px;*/
-/*    height: 610px;*/
-/*    background: #D9D9D9;*/
-/*}*/
 
 .page.page-1 {
     left: 0;
@@ -219,5 +202,5 @@ a.link-button {
 .page img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures images fill the container proportionally */
+    object-fit: contain; /* Ensures images fill the container proportionally */
 }
