@@ -36,11 +36,10 @@ body {
 /*}*/
 
 
-/* Header Styling */
 header {
     position: relative;
-    width: 100%;
-    max-width: 1403px;
+    width: 90%; /* Dynamically adjust to 90% of the viewport width */
+    max-width: 1400px; /* Optional: set a maximum width for larger screens */
     height: auto;
     margin: 0 auto;
     background: #000;
@@ -51,6 +50,21 @@ header {
     align-items: center;
     padding: 20px 0;
     z-index: 2;
+}
+
+/* Optional: Add media queries for smaller devices */
+@media (max-width: 768px) {
+    header {
+        width: 95%; /* Adjust width for smaller screens */
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        width: 100%; /* Full width on very small screens */
+        padding: 10px 0;
+    }
 }
 
 /* Title Styling */
