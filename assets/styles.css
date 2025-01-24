@@ -263,7 +263,7 @@ a.link-button {
     flex: 0 0 auto; /* Let the box size itself based on content */
     max-width: 100%; /* Prevent overflow issues */
     margin: 10px; /* Add spacing around the container */
-    width: 400px; /* Allow the width to adjust to content */
+    width: 600px; /* Allow the width to adjust to content */
 }
 
 
