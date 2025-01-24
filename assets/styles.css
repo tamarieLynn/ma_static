@@ -38,8 +38,8 @@ body {
 
 header {
     position: relative;
-    width: 90%; /* Dynamically adjust to 90% of the viewport width */
-    max-width: 1400px; /* Optional: set a maximum width for larger screens */
+    width: 100%; /* Dynamically adjust to 90% of the viewport width */
+    max-width: 1500px; /* Optional: set a maximum width for larger screens */
     height: auto;
     margin: 0 auto;
     background: #000;
@@ -70,7 +70,7 @@ header {
 /* Title Styling */
 header h1 {
     width: 100%;
-    max-width: 1403px;
+    max-width: 1503px;
     font-family: 'Inknut Antiqua', serif;
     font-weight: 400;
     font-size: 80px;
@@ -119,7 +119,7 @@ header h1 {
 .red-bar {
     position: absolute;
     width: 100%;
-    max-width: 1403px;
+    max-width: 1503px;
     padding: 20px;
     height: 104px;
     bottom: 0;
