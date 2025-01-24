@@ -215,19 +215,32 @@ a.link-button {
 }
 
 
-/* Adjust the position of the homepage container */
+/* Adjust the position and behavior of the homepage container */
 .homepage-container {
     margin: 20px auto; /* Center horizontally and give some vertical margin */
     padding: 20px;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-between; /* Spread items evenly */
     gap: 20px;
     max-width: 1500px; /* Optional: limit width for better layout */
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for effect */
+    overflow-x: auto; /* Add horizontal scrolling if necessary */
 }
+
+/* Ensure children shrink to fit */
+.homepage-container > * {
+    flex: 1 1 auto; /* Allow items to shrink and grow based on available space */
+    min-width: 0;   /* Prevent items from overflowing their container */
+}
+@media (max-width: 768px) {
+    .homepage-container {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+}
+
 
 /* Quick links box styling */
 .quick-links {
