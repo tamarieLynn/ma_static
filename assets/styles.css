@@ -185,9 +185,9 @@ a.link-button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px; /* Add spacing between pages */
+    gap: 50px; /* Add spacing between pages */
     width: 100%;
-    max-width: 1403px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
     background: #000; /* Frame container background */
