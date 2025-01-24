@@ -220,7 +220,7 @@ a.link-button {
     margin: 20px auto; /* Center horizontally and give some vertical margin */
     padding: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     gap: 20px;
     max-width: 1500px; /* Optional: limit width for better layout */
