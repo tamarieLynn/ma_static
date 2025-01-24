@@ -255,7 +255,7 @@ a.link-button {
 
 /* Quick links box styling */
 .quick-links {
-    background-color: #C2C2C2;
+    background-color: #858585;
     color: #000;
     padding: 10px 15px; /* Reduce padding for a tighter fit */
     border-radius: 8px;
@@ -263,7 +263,7 @@ a.link-button {
     flex: 0 0 auto; /* Let the box size itself based on content */
     max-width: 100%; /* Prevent overflow issues */
     margin: 10px; /* Add spacing around the container */
-    width: 200px; /* Allow the width to adjust to content */
+    width: 400px; /* Allow the width to adjust to content */
 }
 
 
@@ -293,15 +293,28 @@ a.link-button {
     color: #0056b3;
 }
 
+/*vertical bar*/
+/*.link-bar {*/
+/*    display: flex;*/
+/*    flex-direction: column; !* Stacks links vertically *!*/
+/*    align-items: flex-start; !* Aligns links to the left *!*/
+/*    gap: 10px; !* Space between links *!*/
+/*    padding: 10px 20px;*/
+/*    background-color: #333;*/
+/*    border-radius: 5px;*/
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);*/
+/*}*/
+
+/*horizontal bar*/
 .link-bar {
     display: flex;
-    flex-direction: column; /* Stacks links vertically */
-    align-items: flex-start; /* Aligns links to the left */
-    gap: 10px; /* Space between links */
-    padding: 10px 20px;
-    background-color: #333;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    justify-content: center; /* Centers links horizontally */
+    align-items: center; /* Centers links vertically */
+    gap: 20px; /* Space between links */
+    padding: 10px 20px; /* Adds spacing inside the bar */
+    background-color: #333; /* Dark background for contrast */
+    border-radius: 5px; /* Rounds the corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow */
 }
 
 .link-bar a {
