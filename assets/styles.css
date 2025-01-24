@@ -193,6 +193,17 @@ a.link-button {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.home2-container {
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    gap: 0px; /* Add spacing between pages */
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 0px;
+    border: 1px solid #000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .page {
     width: 100%;  /* Take up full width */
     aspect-ratio: 4 / 4; /* Keeps a consistent aspect ratio */
@@ -249,7 +260,7 @@ a.link-button {
     flex: 0 0 auto; /* Let the box size itself based on content */
     max-width: 100%; /* Prevent overflow issues */
     margin: 10px; /* Add spacing around the container */
-    width: auto; /* Allow the width to adjust to content */
+    width: 200px; /* Allow the width to adjust to content */
 }
 
 
