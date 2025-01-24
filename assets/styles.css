@@ -205,50 +205,6 @@ a.link-button {
     object-fit: contain; /* Ensures images fill the container proportionally */
 }
 
-/*!*links for instagram church wbbb*!*/
-/*.quick-links {*/
-/*    margin: 500px auto;*/
-/*    padding: 20px;*/
-/*    text-align: center;*/
-/*    background: #161414;*/
-/*    border: 1px solid #ccc;*/
-/*    border-radius: 100px;*/
-/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
-/*    max-width: 300px;*/
-/*}*/
-
-/*.quick-links h2 {*/
-/*    font-size: 24px;*/
-/*    color: #B6272B;*/
-/*    margin-bottom: 15px;*/
-/*    font-family: 'Keania One', sans-serif;*/
-/*}*/
-
-/*.quick-links ul {*/
-/*    list-style: none;*/
-/*    padding: 0;*/
-/*    margin: 0;*/
-/*}*/
-
-/*.quick-links ul li {*/
-/*    margin: 10px 0;*/
-/*}*/
-
-/*.quick-links ul li a {*/
-/*    text-decoration: none;*/
-/*    font-size: 18px;*/
-/*    color: #B6272B; !* Link color *!*/
-/*    transition: color 0.3s ease, text-shadow 0.3s ease;*/
-/*}*/
-
-/*.quick-links ul li a:hover {*/
-/*    color: #FF1313; !* Hover color *!*/
-/*    text-shadow: 0 2px 4px rgba(255, 0, 0, 0.3);*/
-/*}*/
- /*all new*/
-
-
-
 
 /* Adjust the position of the homepage container */
 .homepage-container {
@@ -335,4 +291,9 @@ a.link-button {
 
 .link-bar i {
     font-size: 18px; /* Icon size */
+}
+
+.centered {
+    text-align: center;
+    margin: 0 auto;
 }
