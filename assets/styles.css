@@ -183,35 +183,27 @@ a.link-button {
 
 .frame-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 50px; /* Add spacing between pages */
+    flex-direction: column;  /* Stack items vertically */
+    gap: 20px; /* Add spacing between pages */
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
-    padding: 20px;
-    background: #000; /* Frame container background */
+    padding: 10px;
     border: 1px solid #000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.frame-container img {
-    width: 100%; /* Make each image fill the container's width */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Optional: space between images */
-}
-
 .page {
-    width: calc(33.33% - 20px); /* Adjust width for three columns, minus the gap */
-    aspect-ratio: 3 / 4; /* Keeps a consistent aspect ratio */
-    background: #333; /* Default background color for pages */
+    width: 100%;  /* Take up full width */
+    aspect-ratio: 4 / 4; /* Keeps a consistent aspect ratio */
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border: 1px solid #000;
+    border: 10px solid #000;
     border-radius: 8px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px; /* Add bottom margin between images */
 }
 
 .page img {
@@ -219,7 +211,6 @@ a.link-button {
     height: 100%;
     object-fit: contain; /* Ensures images fill the container proportionally */
 }
-
 
 /* Adjust the position and behavior of the homepage container */
 .homepage-container {
