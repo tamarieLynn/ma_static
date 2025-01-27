@@ -63,6 +63,27 @@
         <img src="assets/images/Bo staff.webp" alt="Bo Staff" />
     </div>
 </div>
+
+<!-- Back to Top Button -->
+<button id="backToTop" title="Go to top">↑ Back to Top</button>
+
+<script>
+    // JavaScript for "Back to Top" button functionality
+    const backToTopButton = document.getElementById("backToTop");
+
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    backToTopButton.onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+</script>
+
 </body>
 </html>
 
