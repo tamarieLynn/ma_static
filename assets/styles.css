@@ -26,7 +26,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/assets/images/VV_NAZ_MA.jpeg');
+    background-image: url('/assets/images/VV_NAZ_MA.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -100,7 +100,7 @@ header h1 {
     background: linear-gradient(90deg, #D9D9D9 0%, #737373 100%);
     border: 1px solid #000;
     border-radius: 8px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,7 +124,7 @@ header h1 {
     height: 104px;
     bottom: 0;
     background: #B6272B;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 1; /* Ensures it stays behind the buttons */
     margin-top: 10px; /* Adds space if necessary */
 }
@@ -190,7 +190,7 @@ a.link-button {
     margin: 0 auto;
     padding: 10px;
     border: 1px solid #000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .home2-container {
@@ -204,7 +204,7 @@ a.link-button {
     border: 1px solid #000;
     border-radius: 20px;
     background: #858585;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .page {
@@ -216,7 +216,7 @@ a.link-button {
     overflow: hidden;
     border: 10px solid #000;
     border-radius: 8px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 10px; /* Add bottom margin between images */
 }
 
@@ -237,7 +237,7 @@ a.link-button {
     max-width: 1500px; /* Optional: limit width for better layout */
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     border-radius: 8px; /* Rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for effect */
     overflow-x: auto; /* Add horizontal scrolling if necessary */
 }
 
@@ -259,7 +259,7 @@ a.link-button {
     color: #000;
     padding: 10px 10px; /* Reduce padding for a tighter fit */
     border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     flex: 0 0 auto; /* Let the box size itself based on content */
     max-width: 100%; /* Prevent overflow issues */
     margin: 10px; /* Add spacing around the container */
@@ -311,7 +311,7 @@ a.link-button {
     display: flex;
     justify-content: center; /* Centers links horizontally */
     align-items: center; /* Centers links vertically */
-    gap: 0px; /* Space between links */
+    gap: 0; /* Space between links */
     padding: 10px 10px; /* Adds spacing inside the bar */
     background-color: #333; /* Dark background for contrast */
     border-radius: 8px; /* Rounds the corners */
