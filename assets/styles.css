@@ -347,7 +347,8 @@ a.link-button {
 
 .carousel {
     position: relative;
-    max-width: 600px;
+    max-width: 100%; /* Makes it responsive */
+    width: 600px;
     margin: auto;
     overflow: hidden;
 }
@@ -366,6 +367,7 @@ a.link-button {
     display: block;
 }
 
+/* Navigation Buttons */
 button {
     position: absolute;
     top: 50%;
@@ -375,6 +377,15 @@ button {
     border: none;
     cursor: pointer;
     padding: 10px;
+    font-size: 18px;
+}
+
+/* Make buttons bigger for touchscreens */
+@media (max-width: 768px) {
+    button {
+        padding: 15px;
+        font-size: 24px;
+    }
 }
 
 #prev {
@@ -384,3 +395,4 @@ button {
 #next {
     right: 10px;
 }
+
