@@ -76,7 +76,7 @@ header h1 {
     font-size: 80px;
     line-height: 100px;
     text-align: center;
-    color: #dd2828;
+    color: #B02E2E;
     margin-top: 20px;
     padding: 20px;
 }
@@ -123,7 +123,7 @@ header h1 {
     padding: 20px;
     height: 104px;
     bottom: 0;
-    background: #dd2828;
+    background: #B02E2E;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 1; /* Ensures it stays behind the buttons */
     margin-top: 10px; /* Adds space if necessary */
@@ -134,7 +134,7 @@ p {
     text-align: center;
     margin-top: 20px;
     font-size: 1.2rem;
-    color: #dd2828;
+    color: #B02E2E;
 }
 
 /* Image Container */
@@ -347,7 +347,7 @@ a.link-button {
 /* Carousel Wrapper for Padding & Styling */
 .carousel-wrapper {
     padding: 20px;
-    background: #dd2828;
+    background: #B02E2E;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 650px; /* Prevents excessive stretching */
