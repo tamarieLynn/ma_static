@@ -360,6 +360,8 @@ a.link-button {
 
 .carousel-item {
     width: 100%;
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures the full image is visible without cropping */
     display: none;
 }
 
