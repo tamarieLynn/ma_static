@@ -345,13 +345,27 @@ a.link-button {
     margin: 0 auto;
 }
 
-.carousel {
-    position: relative;
-    max-width: 100%; /* Makes it responsive */
-    width: 600px;
-    margin: auto;
-    overflow: hidden;
+/*used for photos*/
+.carousel-wrapper {
+    padding: 20px; /* Space around the carousel */
+    background: #f8f9fa; /* Light background color */
+    border-radius: 10px; /* Soft rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 650px; /* Prevents excessive stretching */
+    margin: 40px auto; /* Centers the container */
+    text-align: center;
 }
+
+.carousel {
+    max-width: 100%;
+}
+/*.carousel {*/
+/*    position: relative;*/
+/*    max-width: 100%; !* Makes it responsive *!*/
+/*    width: 600px;*/
+/*    margin: auto;*/
+/*    overflow: hidden;*/
+/*}*/
 
 .carousel-container {
     display: flex;
@@ -371,22 +385,37 @@ a.link-button {
 
 /* Navigation Buttons */
 button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
+    border-radius: 50%;
+    padding: 12px;
 }
 
-/* Make buttons bigger for touchscreens */
+/*button {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*    background-color: rgba(0, 0, 0, 0.5);*/
+/*    color: white;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*    padding: 10px;*/
+/*    font-size: 18px;*/
+/*}*/
+
+/*!* Make buttons bigger for touchscreens *!*/
+/*@media (max-width: 768px) {*/
+/*    button {*/
+/*        padding: 15px;*/
+/*        font-size: 24px;*/
+/*    }*/
+/*}*/
+
+/* Mobile-friendly adjustments */
 @media (max-width: 768px) {
-    button {
+    .carousel-wrapper {
         padding: 15px;
-        font-size: 24px;
+        max-width: 90%;
     }
 }
 
