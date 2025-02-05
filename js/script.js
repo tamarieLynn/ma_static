@@ -1,5 +1,5 @@
 let index = 0;
-const images = document.querySelectorAll('.carousel-item');
+const images = document.querySelectorAll('.carousel-item');// is used by photos
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 
@@ -44,3 +44,33 @@ function handleSwipe() {
 
 // Initialize first image
 showImage(index);
+// Back to Top Button
+const backToTopButton = document.createElement("button");
+backToTopButton.id = "backToTop";
+backToTopButton.textContent = "↑ Back to Top";
+backToTopButton.style.position = "fixed";
+backToTopButton.style.bottom = "20px";
+backToTopButton.style.right = "20px";
+backToTopButton.style.padding = "10px 15px";
+backToTopButton.style.background = "#FF1313";
+backToTopButton.style.color = "#fff";
+backToTopButton.style.border = "none";
+backToTopButton.style.borderRadius = "5px";
+backToTopButton.style.cursor = "pointer";
+backToTopButton.style.display = "none";
+backToTopButton.style.fontSize = "14px";
+document.body.appendChild(backToTopButton);
+
+// Show button when scrolling down
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+});
+
+// Scroll to Top on Click
+backToTopButton.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
