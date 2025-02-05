@@ -1,5 +1,5 @@
 let index = 0;
-const images = document.querySelectorAll('.page');
+const images = document.querySelectorAll('.frame-container');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 
