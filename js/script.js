@@ -1,5 +1,5 @@
 let index = 0;
-const images = document.querySelectorAll('.carousel-item');
+const images = document.querySelectorAll('.page');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 
