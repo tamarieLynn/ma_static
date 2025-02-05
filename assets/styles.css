@@ -374,12 +374,27 @@ a.link-button {
     height: auto;
     aspect-ratio: 16 / 9;
     object-fit: contain;
+    text-align: center;
     display: none;
 }
 
 .carousel-item.active {
     display: block;
 }
+
+/* Style the captions */
+.carousel-caption {
+    font-size: 16px;
+    color: #333; /* Adjust color as needed */
+    background: rgba(255, 255, 255, 0.7); /* Light background for readability */
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+
 
 /* Navigation Buttons */
 button {
