@@ -378,23 +378,32 @@ a.link-button {
     display: none;
 }
 
+.carousel-item img {
+    display: block; /* Prevents inline spacing issues */
+    margin: 0 auto; /* Centers the image */
+    max-width: 100%; /* Ensures responsiveness */
+    height: auto; /* Maintains aspect ratio */
+}
+
 .carousel-item.active {
     display: block;
 }
 
+
 /* Style the captions */
 .carousel-caption {
     font-size: 16px;
-    color: #333; /* Adjust color as needed */
-    background: rgba(255, 255, 255, 0.7); /* Light background for readability */
+    color: #333;
+    background: rgba(255, 255, 255, 0.7);
     padding: 8px;
     margin-top: 10px;
     border-radius: 5px;
-    display: inline-block;
+    display: block; /* Ensures it's below the image */
+    text-align: center;
+    width: fit-content; /* Prevents it from stretching */
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
-
 
 /* Navigation Buttons */
 button {
